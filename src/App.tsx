@@ -8,7 +8,6 @@ import WhyTravelWithUs from './components/WhyTravelWithUs';
 import AboutUs from './components/AboutUs';
 import ContactPage from './components/ContactPage';
 import { InfiniteMovingCardsDemo } from './components/InfiniteMovingCards';
-import { GlobeDemo } from './components/GlobeDemo';
 
 function App() {
   const sectionsRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -76,9 +75,6 @@ function App() {
         </div>
         <div className='contact' ref={(el) => sectionsRef.current.push(el)}>
           <ContactPage/>
-        </div>
-        <div className='globecomp' ref={(el) => sectionsRef.current.push(el)}>
-          <GlobeDemo/>
         </div>
         <FooterComp/>
     </div>
